@@ -1,31 +1,82 @@
-{% extends "index.html" %}
-{% block content %}
-<div class="container">
-    <h2>Join the Future of Therapy: Apply now with TeleThrive!</h2>
-    <div class="job-description mx-4">
-        <p>We are looking for experienced therapists who are passionate about helping people improve their mental well-being. As a therapist on TeleThrive, you will have the opportunity to connect with clients remotely and provide counseling and support through our secure platform.</p>
-        <p>Key responsibilities include:</p>
-        <ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/static/main.css">
+  <title>TeleThrive - For Therapists</title>
+</head>
+
+<body>
+  <div class="layout-container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="/home">TeleThrive</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="/dashboard">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="/logout">Logout</a></li>
+          <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="/register">Register</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/for_therapist">For Therapists</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="mt-5">
+      <div class="container">
+        <h2>Join the Future of Therapy: Apply now with TeleThrive!</h2>
+        <div class="job-description mx-4">
+          <p>We are looking for experienced therapists who are passionate about helping people improve their mental well-being. As a therapist on TeleThrive, you will have the opportunity to connect with clients remotely and provide counseling and support through our secure platform.</p>
+          <p>Key responsibilities include:</p>
+          <ul>
             <li>Conducting therapy sessions via video calls</li>
             <li>Developing treatments tailored to individual client needs</li>
             <li>Providing support and guidance to clients facing mental health challenges</li>
-        </ul>
-    </div>
-    <div class="how-we-work mx-4">
-        <p>At TeleThrive, we strive to make mental health care accessible and convenient for everyone. Our platform connects clients with qualified therapists, allowing them to receive professional support from the comfort of their own homes.</p>
-        <p>Here's how our platform woks:</p>
-        <ol>
+          </ul>
+        </div>
+        <div class="how-we-work mx-4">
+          <p>At TeleThrive, we strive to make mental health care accessible and convenient for everyone. Our platform connects clients with qualified therapists, allowing them to receive professional support from the comfort of their own homes.</p>
+          <p>Here's how our platform works:</p>
+          <ol>
             <li>Clients create an account and complete a brief assessment to match them with the most suitable therapist.</li>
             <li>Therapists conduct sessions with clients via video calls, providing counseling and guidance tailored to their needs.</li>
-            <li>Both clients and therapists have  tools and resources to facilitate effective communication and treatment.</li>
-        </ol>
-    </div>
-    <div class="container">
-        <h3 class="mb-2">
+            <li>Both clients and therapists have tools and resources to facilitate effective communication and treatment.</li>
+          </ol>
+        </div>
+        <div class="container">
+          <h3 class="mb-2">
             <a href="/register/therapist">
-                <button class="btn btn-secondary btn-block" type="button">Register as a Therapist Now!</button>
+              <button class="btn btn-secondary btn-block" type="button">Register as a Therapist Now!</button>
             </a>
-        </h3>
+          </h3>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer mt-4">
+        <div class="text-center container">
+          <p>Project made by <a href="https://github.com/ynot93/">Tony</a> and <a href="https://github.com/millyanne93/">Millyanne</a>.
+          </p>
+        </div>
     </div>
+</footer>
 </div>
-{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+crossorigin="anonymous"></script>
+</body>
+
+</html>
+
