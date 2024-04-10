@@ -1,164 +1,212 @@
-{% extends "index.html" %}
-{% block content %}
-<!-- Jumbotron Section -->
-<div class="container-fluid jumbotron text-center">
-    <h1>Connecting you with licensed therapists for virtual mental health support.</h1>
-    <p class="lead">We aim to address the challenge of limited access to mental health
-        services, particularly for individuals who face barriers such as geographical distance, stigma, or
-        scheduling constraints.
-    </p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Services Section -->
-<section class="services-section">
-    <div class="container">
-        <div class="row">
-            <!-- Image column -->
-            <div class="col-md-6">
-                <img src="../static/images/Handshake.jpg" alt="Handshake Image" class="img-fluid">
-            </div>
-            <!-- Services column -->
-            <div class="col-md-6">
-                <h2 class="mt-4">What we offer</h2>
-                <ul class="service">
-                    <li class="service-item">Counseling Sessions</li>
-                    <p>Personalized counseling sessions conducted by licensed professionals, tailored to address your
-                        needs.</p>
-                    <li class="service-item">Support Groups</li>
-                    <p>Join our supportive therapy groups facilitated by experienced mental health professionals.</p>
-                    <li class="service-item">Wellness Workshops</li>
-                    <p>Engage in our wellness workshops focused on holistic well-being and self-care practices.</p>
-                    <li class="service-item">Mindfulness Practices</li>
-                    <p>Learn and practice mindfulness techniques to cultivate present-moment awareness and enhance
-                        overall well-being.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/main.css">
+    <title>TeleThrive</title>
+</head>
+
+<body>
+    <div class="layout-container">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a href="/home">TeleThrive</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link"  href="/dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link" href="/logout">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link" href="/for_therapist">For Therapists</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
-</section>
+        </nav>
+    
+        <main role="main" class="mt-5">
+            <div class="container-fluid jumbotron text-center">
+                <h1>Connecting you with licensed therapists for virtual mental health support.</h1>
+                <p class="lead">We aim to address the challenge of limited access to mental health
+                    services, particularly for individuals who face barriers such as geographical distance, stigma, or
+                    scheduling constraints.
+                </p>
+            </div>
 
-<!-- About Us Section -->
-<section class="about-section">
-    <div class="container-fluid py-3">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="../static/images/About us.png" alt="About Us Image" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <div class="container py-3">
-                    <h2>About Us</h2>
-                    <p>At TeleThrive, we're dedicated to providing accessible mental health support to
-                        people seeking healing. With a team of licensed professionals and experts in
-                        various therapeutic modalities, we offer personalized counseling, supportive therapy groups, and
-                        wellness workshops designed to promote holistic well-being.
-                        <br>
-                        Our mission is to empower humans to navigate life's challenges with resilience, self-awareness,
-                        and hope. Whether you're seeking support
-                        for stress, relationship issues, or personal growth, we're here to accompany you on your journey
-                        to
-                        wellness.
-                        <br>
-                        <br>
-                        Welcome to TeleThrive, where healing begins.
-                    </p>
-                    <a href="/about" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Get Started -->
-<section class="container py-6">
-    <div class="get-started ">
-        
-        <div class="option individual">
-            <a href="/health_analysis">
-                <h2>Individual Therapy</h2>
-                <p>Explore personalized therapy sessions tailored to your needs.</p>
-            </a>
-        </div>
-        <div class="option teen">
-            <a href="/health_analysis">
-                <h2>Teen Therapy</h2>
-                <p>Specialized support and guidance for adolescents facing challenges.</p>
-            </a>
-        </div>
-        <div class="option couple">
-            <a href="/health_analysis">
-                <h2>Couple's Therapy</h2>
-                <p>Strengthen your relationship and improve communication with couples therapy.</p>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Articles Section -->
-<section class="articles-section py-5">
-    <div class="container">
-        <h2>Articles</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4 border px-0 rounded article">
-                <h3 class="p-2">Mental Health</h3>
-                <img src="../static/images/Inspiration.jpg" alt="Convenient Image" class="img-fluid">
-                <div class="p-3">
-                    <p>Mental health has long been a taboo topic in many African communities, shrouded in silence and
-                        stigma. Yet, the reality is that mental health issues affect millions of individuals across the
-                        continent...</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 border px-0 rounded article">
-                <h3 class="p-2">Effective Communication</h3>
-                <img src="../static/images/Freedom.jpg" alt="Secure Image" class="img-fluid">
-                <div class="p-3">
-                    <p>Effective communication lies at the heart of every successful relationship. Whether romantic
-                        partnerships, friendships, or familial bonds, the ability to express thoughts, feelings, and
-                        concerns...</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 border px-0 rounded article">
-                <h3 class="p-2">Setting SMART Goals</h3>
-                <img src="../static/images/Contemplation.jpg" alt="Personalized Image" class="img-fluid">
-                <div class="p-3">
-                    <p>Setting goals is an integral part of personal and professional growth, providing a roadmap for
-                        success and a framework for progress. However, not all goals are created equal. To maximize our
-                        chances of success</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Us Section -->
-<section class="contact-section py-5 mb-4">
-    <div class="container">
-        <h2 class="pb-4">Contact Us</h2>
-        <div class="row pb-4">
-            <div class="col-md-4">
-                <h6>E-Mail Address</h6>
-                <p class="m-0">tonymmputhia@gmail.com</p>
-                <p class="m-0">nmillyanne20@gmail.com</p>
-            </div>
-            <div class="col-md-4">
-                <h6>Subscribe to receive newsletters and promos.</h6>
-                <!-- Email form -->
-                <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <section class="services-section">
+                <div class="container">
+                    <div class="row">
+                        <!-- Image column -->
+                        <div class="col-md-6">
+                            <img src="static/images/Handshake.jpg" alt="Handshake Image" class="img-fluid">
+                        </div>
+                        <!-- Services column -->
+                        <div class="col-md-6">
+                            <h2 class="mt-4">What we offer</h2>
+                            <ul class="service">
+                                <li class="service-item">Counseling Sessions</li>
+                                <p>Personalized counseling sessions conducted by licensed professionals, tailored to address your
+                                    needs.</p>
+                                <li class="service-item">Support Groups</li>
+                                <p>Join our supportive therapy groups facilitated by experienced mental health professionals.</p>
+                                <li class="service-item">Wellness Workshops</li>
+                                <p>Engage in our wellness workshops focused on holistic well-being and self-care practices.</p>
+                                <li class="service-item">Mindfulness Practices</li>
+                                <p>Learn and practice mindfulness techniques to cultivate present-moment awareness and enhance
+                                    overall well-being.</p>
+                            </ul>
+                        </div>
                     </div>
-                    <button type="submit" class="btn-sm btn-primary">Submit</button>
-                </form>
-            </div>
-            <div class="col-md-4">
-                <h6>Phone Number</h6>
-                <p class="m-0">(+254) 720 123456</p>
-                <p class="m-0">(+254) 726 654321</p>
-            </div>
-        </div>
-    </div>
-</section>
+                </div>
+            </section>
 
-{% endblock content %}
+            <!-- About Us Section -->
+            <section class="about-section">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="static/images/About us.png" alt="About Us Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="container py-3">
+                                <h2>About Us</h2>
+                                <p>At TeleThrive, we're dedicated to providing accessible mental health support to
+                                    people seeking healing. With a team of licensed professionals and experts in
+                                    various therapeutic modalities, we offer personalized counseling, supportive therapy groups, and
+                                    wellness workshops designed to promote holistic well-being.
+                                    <br>
+                                    Our mission is to empower humans to navigate life's challenges with resilience, self-awareness,
+                                    and hope. Whether you're seeking support
+                                    for stress, relationship issues, or personal growth, we're here to accompany you on your journey
+                                    to
+                                    wellness.
+                                    <br>
+                                    <br>
+                                    Welcome to TeleThrive, where healing begins.
+                                </p>
+                                <a href="/about" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get Started -->
+            <section class="container py-6">
+                <div class="get-started ">
+                    <div class="option individual">
+                        <a href="/health_analysis">
+                            <h2>Individual Therapy</h2>
+                            <p>Explore personalized therapy sessions tailored to your needs.</p>
+                        </a>
+                    </div>
+                    <div class="option teen">
+                        <a href="/health_analysis">
+                            <h2>Teen Therapy</h2>
+                            <p>Specialized support and guidance for adolescents facing challenges.</p>
+                        </a>
+                    </div>
+                    <div class="option couple">
+                        <a href="/health_analysis">
+                            <h2>Couple's Therapy</h2>
+                            <p>Strengthen your relationship and improve communication with couples therapy.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Articles Section -->
+            <section class="articles-section py-5">
+                <div class="container">
+                    <h2>Articles</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4 border px-0 rounded article">
+                            <h3 class="p-2">Mental Health</h3>
+                            <img src="static/images/Inspiration.jpg" alt="Convenient Image" class="img-fluid">
+                            <div class="p-3">
+                                <p>Mental health has long been a taboo topic in many African communities, shrouded in silence and
+                                    stigma. Yet, the reality is that mental health issues affect millions of individuals across the
+                                    continent...</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4 border px-0 rounded article">
+                            <h3 class="p-2">Effective Communication</h3>
+                            <img src="static/images/Freedom.jpg" alt="Secure Image" class="img-fluid">
+                            <div class="p-3">
+                                <p>Effective communication lies at the heart of every successful relationship. Whether romantic
+                                    partnerships, friendships, or familial bonds, the ability to express thoughts, feelings, and
+                                    concerns...</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4 border px-0 rounded article">
+                            <h3 class="p-2">Setting SMART Goals</h3>
+                            <img src="static/images/Contemplation.jpg" alt="Personalized Image" class="img-fluid">
+                            <div class="p-3">
+                                <p>Setting goals is an integral part of personal and professional growth, providing a roadmap for
+                                    success and a framework for progress. However, not all goals are created equal. To maximize our
+                                    chances of success</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Us Section -->
+            <section class="contact-section py-5 mb-4">
+                <div class="container">
+                    <h2 class="pb-4">Contact Us</h2>
+                    <div class="row pb-4">
+                        <div class="col-md-4">
+                            <h6>E-Mail Address</h6>
+                            <p class="m-0">tonymmputhia@gmail.com</p>
+                            <p class="m-0">nmillyanne20@gmail.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Subscribe to receive newsletters and promos.</h6>
+                            <!-- Email form -->
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                </div>
+                                <button type="submit" class="btn-sm btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Phone Number</h6>
+                            <p class="m-0">(+254) 720 123456</p>
+                            <p class="m-0">(+254) 726 654321</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer>
+            <div class="footer mt-4">
+                <div class="text-center container">
+                    <p>Project made by <a href="https://github.com/ynot93/">Tony</a> and <a
+                            href="https://github.com/millyanne93/">Millyanne</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
