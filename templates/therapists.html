@@ -6,7 +6,7 @@
             {% for therapist in therapists %}
                 <li class="list-group-item w-75 mb-3">
                     <div class="d-flex media">
-                        <img class="rounded-circle account-img" src="{{ url_for('static', filename='images/profile_pictures/' + therapist.image_profile) }}">
+                        <img class="rounded-circle account-img" src="/static/images/profile_pictures/{{ therapist.image_profile }}">
                         <div class="media-body">
                             <h3 class="account-heading">{{ therapist.first_name }} {{ therapist.last_name }}</h3>
                             <p>{{ therapist.email }}</p>

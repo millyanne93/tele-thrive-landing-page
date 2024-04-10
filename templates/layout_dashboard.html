@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "index.html" %}
 {% block content %}
 
     <div class="container-fluid">
@@ -9,19 +9,19 @@
                     <div class="sidebar-sticky">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link {% if active_nav == 'profile' %}active{% endif %}" href="{{ url_for('dashboard') }}">Profile</a>
+                                <a class="nav-link {% if active_nav == 'profile' %}active{% endif %}" href="/dashboard">Profile</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {% if active_nav == 'therapists' %}active{% endif %}" href="{{ url_for('view_therapists') }}">Therapists</a>
+                                <a class="nav-link {% if active_nav == 'therapists' %}active{% endif %}" href="/view_therapists">Therapists</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {% if active_nav == 'appointments' %}active{% endif %}" href="{{ url_for('appointments') }}">Appointments</a>
+                                <a class="nav-link {% if active_nav == 'appointments' %}active{% endif %}" href="/appointments">Appointments</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {% if active_nav == 'chat' %}active{% endif %}" href="{{ url_for('posts') }}">Chat</a>
+                                <a class="nav-link {% if active_nav == 'chat' %}active{% endif %}" href="/posts">Chat</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {% if active_nav == 'logout' %}active{% endif %}" href="{{ url_for('logout') }}">Logout</a>
+                                <a class="nav-link {% if active_nav == 'logout' %}active{% endif %}" href="/logout">Logout</a>
                             </li>
                         </ul>
                     </div>
